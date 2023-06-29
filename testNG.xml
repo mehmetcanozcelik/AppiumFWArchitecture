@@ -1,0 +1,60 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="AutomationSuite" verbose="1">
+    <listeners>
+        <listener class-name="androidautomation.base.AnnotationTransformer"/>
+
+    </listeners>
+    <test name="AppiumAndroidAutomation">
+
+        <classes>
+            <class name="androidautomation.base.BasePage">
+                <methods>
+                    <include name="test"/>
+                </methods>
+
+            </class>
+
+            <class name="androidautomation.base.BaseTest">
+                <methods>
+                    <include name="test"/>
+                </methods>
+
+            </class>
+
+            <class name="androidautomation.constants.Constants">
+                <methods>
+                    <include name="test"/>
+                </methods>
+
+            </class>
+
+
+            <class name="androidautomation.page.loginPage">
+                <methods>
+                    <include name="test"/>
+                </methods>
+
+            </class>
+
+            <class name="androidautomation.test.loginPageTest">
+                <methods>
+                    <include name="test"/>
+                </methods>
+
+            </class>
+
+
+
+
+        </classes>
+
+
+
+
+
+
+
+    </test>
+
+
+</suite>
